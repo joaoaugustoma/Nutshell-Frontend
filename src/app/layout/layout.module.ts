@@ -1,29 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {SidenavComponent} from "./sidenav/sidenav.component";
-import {MatIconModule} from "@angular/material/icon";
-import {MatListModule} from "@angular/material/list";
+import { LayoutComponent } from './layout.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {RouterLink, RouterLinkWithHref, RouterOutlet} from "@angular/router";
-import {MatButtonModule} from "@angular/material/button";
-import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatListModule} from "@angular/material/list";
+import {MatIconModule} from "@angular/material/icon";
+
+
 
 @NgModule({
   declarations: [
-    SidenavComponent
+    LayoutComponent
   ],
   exports: [
-    SidenavComponent
+    LayoutComponent
   ],
   imports: [
     CommonModule,
-    MatIconModule,
-    MatListModule,
-    MatSidenavModule,
-    RouterLinkWithHref,
-    MatButtonModule,
     MatToolbarModule,
+    MatSidenavModule,
     RouterOutlet,
+    MatListModule,
+    MatIconModule,
+    RouterLinkWithHref,
     RouterLink,
   ]
 })

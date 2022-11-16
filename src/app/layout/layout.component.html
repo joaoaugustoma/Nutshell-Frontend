@@ -1,1 +1,19 @@
-<app-sidenav></app-sidenav>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened="true">
+    <div class="mat-sidenav-header">
+      <img src="../../assets/img/icon.png" alt="1" width="48px" routerLink=""/>
+      <span routerLink="">Nutshell</span>
+    </div>
+    <mat-nav-list class="nav-button">
+      <a mat-list-item routerLink="/cadastro/fornecedores">
+        <mat-icon>local_shipping</mat-icon>
+        Fornecedores
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
