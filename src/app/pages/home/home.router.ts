@@ -5,12 +5,6 @@ import {LayoutComponent} from "../../layout/layout.component";
 export const HomeRoutes: Routes = [
   {
     path: '',
-    component: LayoutComponent,
-    children: [
-      {
-        path: '',
-        component: HomeComponent,
-      },
-    ]
+    component: HomeComponent,
   }
 ];
