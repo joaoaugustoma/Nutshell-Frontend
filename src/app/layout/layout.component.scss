@@ -1,6 +1,5 @@
 mat-sidenav {
   width: 200px;
-  background: red;
   color: white;
   border: none;
   text-align: center;
@@ -13,18 +12,9 @@ mat-sidenav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
-}
-
-.content {
-  height: 100vh;
-  margin: 16px 16px 16px 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  a {
-    font-size: 2rem;
-    color: lightgray;
+  background-color: #005fd7;
+  img, span {
+    cursor: pointer;
   }
 }
 
@@ -34,10 +24,12 @@ mat-sidenav-container {
 
 .nav-button {
   width: 100%;
+  height: calc(100% - 108px);
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-size: 1rem;
+  background-color: #008dff;
 
   a {
     color: white;

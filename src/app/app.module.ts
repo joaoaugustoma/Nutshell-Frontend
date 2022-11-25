@@ -4,26 +4,32 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LayoutModule} from "./layout/layout.module";
-import { HomeComponent } from './pages/home/home.component';
-import { LoginComponent } from './pages/login/login.component';
-import { FornecedorComponent } from './pages/cadastro/fornecedor/fornecedor.component';
+import {HomeComponent} from './pages/home/home.component';
+import {LoginComponent} from './pages/login/login.component';
+import {CadastroModule} from "./pages/cadastro/cadastro.module";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {HttpClientModule} from "@angular/common/http";
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent,
-    FornecedorComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     LayoutModule,
+    CadastroModule,
+    HttpClientModule,
+    MatDialogModule
   ],
-  providers: [],
-  exports: [
-  ],
+  providers: [HttpClientModule, MatDialogModule],
+  exports: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

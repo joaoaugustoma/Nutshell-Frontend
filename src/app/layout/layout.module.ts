@@ -6,6 +6,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {RouterLink, RouterLinkWithHref, RouterOutlet} from "@angular/router";
 import {MatListModule} from "@angular/material/list";
 import {MatIconModule} from "@angular/material/icon";
+import {FlexModule} from "@angular/flex-layout";
 
 
 
@@ -25,6 +26,7 @@ import {MatIconModule} from "@angular/material/icon";
     MatIconModule,
     RouterLinkWithHref,
     RouterLink,
+    FlexModule,
   ]
 })
 export class LayoutModule { }

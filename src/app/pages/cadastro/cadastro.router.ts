@@ -1,9 +1,9 @@
 import {Routes} from '@angular/router';
-import {FornecedorComponent} from "./fornecedor/fornecedor.component";
+import {FornecedorFiltrarComponent} from "./fornecedor/fornecedor-filtrar/fornecedor-filtrar.component";
 
 export const CadastroRoutes: Routes = [
   {
     path: 'cadastro/fornecedores',
-    component: FornecedorComponent,
+    component: FornecedorFiltrarComponent,
   }
 ];
