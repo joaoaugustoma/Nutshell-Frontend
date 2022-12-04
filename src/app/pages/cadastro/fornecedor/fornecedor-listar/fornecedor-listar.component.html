@@ -1,7 +1,7 @@
 <div dir="rtl" fxLayoutGap="20px">
   <button mat-flat-button color="primary">Relatório</button>
-  <button mat-flat-button color="primary" (click)="editar(null)">Criar</button>
-  <button mat-flat-button color="accent" (click)="filtrar()">Filtrar</button>
+  <button mat-flat-button color="accent" style="color: white" (click)="filtrar()">Filtrar</button>
+  <button mat-flat-button style=" background-color: #4CE883" color="primary" (click) = "criar()">Criar</button>
 </div>
 
 <table mat-table [dataSource]="fornecedores" fxFill>

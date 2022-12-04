@@ -9,6 +9,9 @@ import {MatInputModule} from "@angular/material/input";
 import {FlexModule} from "@angular/flex-layout";
 import {MatButtonModule} from "@angular/material/button";
 import {MatTableModule} from "@angular/material/table";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatOptionModule} from "@angular/material/core";
+import {MatSelectModule} from "@angular/material/select";
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import {MatTableModule} from "@angular/material/table";
     MatInputModule,
     FlexModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    MatTabsModule,
+    MatOptionModule,
+    MatSelectModule
   ]
 })
 export class CadastroModule { }

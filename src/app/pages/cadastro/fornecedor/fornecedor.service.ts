@@ -23,6 +23,7 @@ export class FornecedorService {
   // create(fornecedor: FornecedorModel) : Observable<FornecedorModel> {
   //   return this.httpClient.post<FornecedorModel>(this.baseUrl, fornecedor);
   // }
+
   inativar(fornecedor: FornecedorModel) {
     return this.httpClient.put<FornecedorModel>(this.baseUrl + `/${fornecedor.idPessoa}/inativo`, fornecedor);
   }

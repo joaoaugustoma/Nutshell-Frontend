@@ -3,6 +3,7 @@ import {FornecedorModel} from "../../../../shared/models/Fornecedor.model";
 import {FornecedorService} from "../fornecedor.service";
 import {Router} from "@angular/router";
 import {MatDialog} from "@angular/material/dialog";
+import {FornecedorEditarComponent} from "../fornecedor-editar/fornecedor-editar.component";
 
 @Component({
   selector: 'app-fornecedor-listar',
@@ -18,6 +19,17 @@ export class FornecedorListarComponent implements OnInit {
 
   ngOnInit(): void {
     this.filtrar()
+  }
+
+  criar(){
+    const modalCriar = this.dialog.open(FornecedorEditarComponent, {
+      width: '1000px',
+      height: '500px',
+    });
+
+    modalCriar.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
   editar(fornecedor: FornecedorModel) {
