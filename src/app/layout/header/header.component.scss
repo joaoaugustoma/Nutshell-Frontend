@@ -1,0 +1,32 @@
+.material-icons{
+  color: white;
+}
+
+.header{
+  height: 100%;
+  width: 100%;
+  background-color: #005FD7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #D5E5FF;
+  text-decoration: none;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.mat-toolbar {
+  width: 200px;
+  background: white;
+}

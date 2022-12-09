@@ -1,0 +1,16 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav class="sidenav" mode="side" opened
+               fixedInViewport="true" fixedTopGap="64">
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="/fornecedores">
+        <i class="material-icons">local_shipping</i>
+        <span class="nameIcon">Fornecedores</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<mat-icon>date_range</mat-icon>
